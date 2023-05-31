@@ -10,14 +10,19 @@ package entidad;
  */
 public class Empleado {
     private String cedula, nombre, apellido;
+    char genero;
     private int edad;
 
-    public Empleado(String cedula, String nombre, String apellido,int edad) {
+    public Empleado(String cedula, String nombre, String apellido,
+             char genero,int edad) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.genero = genero;
 	this.edad=edad;
     }
+
+
 
     /**
      * @return the cedula
